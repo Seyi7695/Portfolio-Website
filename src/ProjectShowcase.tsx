@@ -23,7 +23,7 @@ const socialMediaProjects: Project[] = [
     id: 1,
     title: "Mason Skin - Vitamin C Serum",
     description: "Premium skincare product Instagram ad campaign",
-    image: "",
+    image: "/i.PNG",
     category: "Social Media Ad",
     fullDescription:
       "Elegant skincare advertisement for Mason Skin's Vitamin C Serum featuring 'Glow Like Never Before' campaign. Designed for Instagram feed with a focus on luxury beauty aesthetics and limited-time promotional offer.",
@@ -41,7 +41,7 @@ const socialMediaProjects: Project[] = [
     id: 2,
     title: "Veltrix Fitness - Train Like A Champion",
     description: "High-energy fitness gym promotional campaign",
-    image: "src/Pictures/Instagram Post - TRAIN LIKE A CHAMPION.png",
+    image: "/vel.png",
     category: "Social Media Ad",
     fullDescription:
       "Bold and motivational fitness advertisement for Veltrix Fitness featuring dynamic workout imagery. Designed to inspire action and drive gym memberships through social media engagement.",
@@ -59,7 +59,7 @@ const socialMediaProjects: Project[] = [
     id: 3,
     title: "Sneakers Delivery - 24 Hours",
     description: "E-commerce sneaker store delivery promotion",
-    image: "src/Pictures/Instagram Post - FAST SNEAKER DELIVERY.png",
+    image: "sneaker.PNG",
     category: "Social Media Ad",
     fullDescription:
       "Clean and modern e-commerce advertisement showcasing fast sneaker delivery service. Features premium product photography with botanical elements for a contemporary aesthetic.",
@@ -77,7 +77,7 @@ const socialMediaProjects: Project[] = [
     id: 4,
     title: "Veltrix Fitness - Train Like A Champion",
     description: "Push your limits",
-    image: "src/Pictures/Instagram Post - PUSH YOUR LIMITS.png",
+    image: "vel.png",
     category: "Social Media Ad",
     fullDescription:
       "Bold and motivational fitness advertisement for Veltrix Fitness featuring dynamic workout imagery and equipments. Designed to inspire action and drive gym memberships through social media engagement.",
@@ -97,7 +97,7 @@ const socialMediaProjects: Project[] = [
       "Luxury Travel Brand Identity Design | Private Jet Brand Logo (VELARIS)",
     description:
       "Velaris is a luxury private travel brand built around exclusivity and cinematic elegance.",
-    image: "src/Pictures/Instagram Post - ARRIVE BEYOND.png",
+    image: "veris.png",
     category: "Social Media Ad",
     fullDescription:
       "Velaris is a premium private travel brand concept designed to evoke exclusivity and cinematic luxury through minimalist, high-end visual identity and refined typography.",
@@ -117,7 +117,7 @@ const socialMediaProjects: Project[] = [
       "Luxury Travel Brand Identity Design | Private Jet Brand Logo (VELARIS)",
     description:
       "Velaris is a luxury private travel brand built around exclusivity and cinematic elegance.",
-    image: "src/Pictures/Elegant Minimalist Logo for VELARIS.png",
+    image: "ig.png",
     category: "Social Media Ad",
     fullDescription:
       "Velaris is a premium private travel brand concept designed to evoke exclusivity and cinematic luxury through minimalist, high-end visual identity and refined typography.",
@@ -139,7 +139,7 @@ const webProjects: Project[] = [
     id: 1,
     title: "E-Commerce Platform For a Coffee Shop In Ikeja,Lagos.",
     description: "Modern online shopping experience with Figma",
-    image: "src/Pictures/E-commerce store for a coffee shop 2.PNG",
+    image: "/coffee.PNG",
     tags: ["Figma"],
     category: "Frontend Design",
     fullDescription:
@@ -156,7 +156,7 @@ const webProjects: Project[] = [
     title: "Visitors Management software Dashboard",
     description:
       "Data visualization dashboard with real-time metrics and responsive design",
-    image: "src/Pictures/Hotel Visitors Management System..PNG",
+    image: "/visitor.PNG",
     tags: ["Figma", "HTML", "JavaScript"],
     category: "UI/UX Design",
     fullDescription:
@@ -173,7 +173,7 @@ const webProjects: Project[] = [
     id: 3,
     title: "Designed for a lagos Based Event Centre Brand",
     description: "Clean and modern Website for an Event centre",
-    image: "src/Pictures/Royal Occasion.PNG",
+    image: "/Royal Occasion.PNG",
     tags: ["React", "Tailwind", "Design"],
     category: "Web Design",
     fullDescription:
@@ -310,7 +310,7 @@ export function ProjectShowcase() {
                 className="group relative aspect-square bg-slate-800 rounded-2xl overflow-hidden cursor-pointer hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 active:scale-95"
               >
                 <img
-                  src=""
+                  src={project.image}
                   alt="no image"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -351,7 +351,7 @@ export function ProjectShowcase() {
                   {/* Image */}
                   <div className="relative overflow-hidden aspect-[16/9] md:aspect-auto">
                     <img
-                      src=""
+                      src={project.image}
                       alt="no image"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
