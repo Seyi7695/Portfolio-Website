@@ -59,7 +59,11 @@ export function ProjectModal({ isOpen, onClose, project }: ProjectModalProps) {
 
         {/* Project Image */}
         <div className="relative w-full aspect-[16/9] overflow-hidden rounded-t-3xl">
-          <img src="" alt="no image" className="w-full h-full object-cover" />
+          <img
+            src={project.image}
+            alt="no image"
+            className="w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
         </div>
 
