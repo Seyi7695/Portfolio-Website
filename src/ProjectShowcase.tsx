@@ -23,7 +23,7 @@ const socialMediaProjects: Project[] = [
     id: 1,
     title: "Mason Skin - Vitamin C Serum",
     description: "Premium skincare product Instagram ad campaign",
-    image: "/i.PNG",
+    image: "skin.png",
     category: "Social Media Ad",
     fullDescription:
       "Elegant skincare advertisement for Mason Skin's Vitamin C Serum featuring 'Glow Like Never Before' campaign. Designed for Instagram feed with a focus on luxury beauty aesthetics and limited-time promotional offer.",
@@ -77,7 +77,7 @@ const socialMediaProjects: Project[] = [
     id: 4,
     title: "Veltrix Fitness - Train Like A Champion",
     description: "Push your limits",
-    image: "vel.png",
+    image: "hi.jpg",
     category: "Social Media Ad",
     fullDescription:
       "Bold and motivational fitness advertisement for Veltrix Fitness featuring dynamic workout imagery and equipments. Designed to inspire action and drive gym memberships through social media engagement.",
@@ -196,7 +196,7 @@ const concertProjects: Project[] = [
     id: 1,
     title: "Shadow Revival Tour",
     description: "Rock concert poster series",
-    image: "src/Pictures/SHADOWREVIVAL.png",
+    image: "1.jpeg",
     category: "Concert Poster",
     fullDescription:
       "Bold and edgy poster series for Shadow Revival's national tour, capturing the raw energy of rock music.",
@@ -248,7 +248,7 @@ const concertProjects: Project[] = [
     id: 4,
     title: "Random Music concert Ad",
     description: "Bold Music concert Festival",
-    image: "src/Pictures/Blue and White Modern Music Concert Poster.png",
+    image: "6.jpeg",
     category: "Festival Promotion",
     fullDescription:
       "High-energy promotional materials for an electronic dance music festival featuring bold colors and dynamic compositions.",
@@ -409,7 +409,7 @@ export function ProjectShowcase() {
                 className="group relative aspect-[3/4] bg-slate-800 rounded-2xl overflow-hidden cursor-pointer hover:shadow-2xl hover:shadow-cyan-500/30 transition-all duration-300 hover:-translate-y-2 active:scale-95"
               >
                 <img
-                  src=""
+                  src={project.image}
                   alt="no image"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
