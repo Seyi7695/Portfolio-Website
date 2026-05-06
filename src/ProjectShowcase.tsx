@@ -59,7 +59,7 @@ const socialMediaProjects: Project[] = [
     id: 3,
     title: "Sneakers Delivery - 24 Hours",
     description: "E-commerce sneaker store delivery promotion",
-    image: "sneaker.PNG",
+    image: "Instagram Post - Delivery Within 4.png",
     category: "Social Media Ad",
     fullDescription:
       "Clean and modern e-commerce advertisement showcasing fast sneaker delivery service. Features premium product photography with botanical elements for a contemporary aesthetic.",
