@@ -188,6 +188,25 @@ const webProjects: Project[] = [
     liveLink: "https://example.com",
     githubLink: "https://github.com",
   },
+  {
+    id: 4,
+    title: "Mobile E‑Commerce Sneakers App UI/UX Design.",
+    description: "Clean and modern App design For a Sneakers store.",
+    image: "Sneaker.png",
+    tags: ["React", "Tailwind", "Design"],
+    category: "Web Design",
+    fullDescription:
+      "A sleek, modern website designed to help clients showcase their professionalism, highlight their work ethic, and present the elegance and prestige of their event center.",
+    features: [
+      "Smooth scroll animations",
+      "Project showcase galleries",
+      "Contact form integration",
+      "SEO optimized",
+      "Fast loading performance",
+    ],
+    liveLink: "https://example.com",
+    githubLink: "https://github.com",
+  },
 ];
 
 // Concert & Event Promotions
