@@ -193,7 +193,7 @@ const webProjects: Project[] = [
     title: "Mobile E‑Commerce Sneakers App UI/UX Design.",
     description: "Clean and modern App design For a Sneakers store.",
     image: "sneaker.PNG",
-    tags: ["Figma"],
+    tags: [["React", "Tailwind", "Design"]],
     category: "App Design",
     fullDescription:
       "Designed a mobile-first e-commerce app UI/UX for a sneaker store, focusing on intuitive navigation, engaging product showcases, and a seamless checkout flow.",
