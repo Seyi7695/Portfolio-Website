@@ -29,7 +29,7 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Mobile, Figma, App",
+    title: "Mobile Banking App",
     category: "UI/UX Design",
     description: "A modern and intuitive mobile banking experience with seamless navigation and visual appeal.",
     image: "https://images.unsplash.com/photo-1661246627162-feb0269e0c07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjBkZXNpZ258ZW58MXx8fHwxNzc1MDIyMzQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
