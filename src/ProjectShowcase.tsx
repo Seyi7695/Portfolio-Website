@@ -192,7 +192,7 @@ const webProjects: Project[] = [
     id: 4,
     title: "Mobile E‑Commerce Sneakers App UI/UX Design.",
     description: "Clean and modern App design For a Sneakers store.",
-    image: "Sneaker.png",
+    image: "sneaker.PNG",
     tags: ["React", "Tailwind", "Design"],
     category: "Web Design",
     fullDescription:
@@ -204,8 +204,6 @@ const webProjects: Project[] = [
       "SEO optimized",
       "Fast loading performance",
     ],
-    liveLink: "https://example.com",
-    githubLink: "https://github.com",
   },
 ];
 
