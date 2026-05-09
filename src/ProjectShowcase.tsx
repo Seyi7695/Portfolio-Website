@@ -17,6 +17,80 @@ interface Project {
   githubLink?: string;
 }
 
+// Website/Frontend Projects
+const webProjects: Project[] = [
+  {
+    id: 1,
+    title: "E-Commerce Platform For a Coffee Shop In Ikeja,Lagos.",
+    description: "Modern online shopping experience with Figma",
+    image: "/coffee.PNG",
+    tags: ["Figma"],
+    category: "Frontend Design",
+    fullDescription:
+      "A fully responsive e-commerce platform for Ikeja Bean coffee shop design built with Figma",
+    features: [
+      "Responsive design for all devices",
+      "Shopping cart with real-time updates",
+      "Smooth page transitions and animations",
+      "Optimized performance and loading times",
+    ],
+  },
+  {
+    id: 2,
+    title: "Visitors Management software Dashboard",
+    description:
+      "Data visualization dashboard with real-time metrics and responsive design",
+    image: "/visitor.PNG",
+    tags: ["Figma", "HTML", "JavaScript"],
+    category: "UI/UX Design",
+    fullDescription:
+      "Comprehensive analytics dashboard featuring real-time data visualization, interactive charts, and intuitive user interface.",
+    features: [
+      "Real-time data updates",
+      "Interactive charts and graphs",
+      "Customizable dashboard widgets",
+      "Export functionality for reports",
+      "Dark mode support",
+    ],
+  },
+  {
+    id: 3,
+    title: "Designed for a lagos Based Event Centre Brand",
+    description: "Clean and modern Website for an Event centre",
+    image: "/Royal Occasion.PNG",
+    tags: ["React", "Tailwind", "Design"],
+    category: "Web Design",
+    fullDescription:
+      "A sleek, modern website designed to help clients showcase their professionalism, highlight their work ethic, and present the elegance and prestige of their event center.",
+    features: [
+      "Smooth scroll animations",
+      "Project showcase galleries",
+      "Contact form integration",
+      "SEO optimized",
+      "Fast loading performance",
+    ],
+    liveLink: "https://example.com",
+    githubLink: "https://github.com",
+  },
+  {
+    id: 4,
+    title: "Mobile E‑Commerce Sneakers App UI/UX Design.",
+    description: "Clean and modern App design For a Sneakers store.",
+    image: "sneaker.PNG",
+    tags: [["Figma"]],
+    category: "App Design",
+    fullDescription:
+      "Designed a mobile-first e-commerce app UI/UX for a sneaker store, focusing on intuitive navigation, engaging product showcases, and a seamless checkout flow.",
+    features: [
+      "Smooth scroll animations",
+      "Project showcase galleries",
+      "Contact form integration",
+      "SEO optimized",
+      "Fast loading performance",
+    ],
+  },
+];
+
 // Social Media Ad Projects
 const socialMediaProjects: Project[] = [
   {
@@ -133,80 +207,6 @@ const socialMediaProjects: Project[] = [
   },
 ];
 
-// Website/Frontend Projects
-const webProjects: Project[] = [
-  {
-    id: 1,
-    title: "E-Commerce Platform For a Coffee Shop In Ikeja,Lagos.",
-    description: "Modern online shopping experience with Figma",
-    image: "/coffee.PNG",
-    tags: ["Figma"],
-    category: "Frontend Design",
-    fullDescription:
-      "A fully responsive e-commerce platform for Ikeja Bean coffee shop design built with Figma",
-    features: [
-      "Responsive design for all devices",
-      "Shopping cart with real-time updates",
-      "Smooth page transitions and animations",
-      "Optimized performance and loading times",
-    ],
-  },
-  {
-    id: 2,
-    title: "Visitors Management software Dashboard",
-    description:
-      "Data visualization dashboard with real-time metrics and responsive design",
-    image: "/visitor.PNG",
-    tags: ["Figma", "HTML", "JavaScript"],
-    category: "UI/UX Design",
-    fullDescription:
-      "Comprehensive analytics dashboard featuring real-time data visualization, interactive charts, and intuitive user interface.",
-    features: [
-      "Real-time data updates",
-      "Interactive charts and graphs",
-      "Customizable dashboard widgets",
-      "Export functionality for reports",
-      "Dark mode support",
-    ],
-  },
-  {
-    id: 3,
-    title: "Designed for a lagos Based Event Centre Brand",
-    description: "Clean and modern Website for an Event centre",
-    image: "/Royal Occasion.PNG",
-    tags: ["React", "Tailwind", "Design"],
-    category: "Web Design",
-    fullDescription:
-      "A sleek, modern website designed to help clients showcase their professionalism, highlight their work ethic, and present the elegance and prestige of their event center.",
-    features: [
-      "Smooth scroll animations",
-      "Project showcase galleries",
-      "Contact form integration",
-      "SEO optimized",
-      "Fast loading performance",
-    ],
-    liveLink: "https://example.com",
-    githubLink: "https://github.com",
-  },
-  {
-    id: 4,
-    title: "Mobile E‑Commerce Sneakers App UI/UX Design.",
-    description: "Clean and modern App design For a Sneakers store.",
-    image: "sneaker.PNG",
-    tags: [["Figma"]],
-    category: "App Design",
-    fullDescription:
-      "Designed a mobile-first e-commerce app UI/UX for a sneaker store, focusing on intuitive navigation, engaging product showcases, and a seamless checkout flow.",
-    features: [
-      "Smooth scroll animations",
-      "Project showcase galleries",
-      "Contact form integration",
-      "SEO optimized",
-      "Fast loading performance",
-    ],
-  },
-];
-
 // Concert & Event Promotions
 const concertProjects: Project[] = [
   {
@@ -309,43 +309,7 @@ export function ProjectShowcase() {
           </p>
         </div>
 
-        {/* Social Media Ad Designs */}
-        <div className="mb-24">
-          <div className="mb-10">
-            <h3 className="text-3xl font-bold mb-3">Social Media Ad Designs</h3>
-            <p className="text-gray-400">
-              Eye-catching social content optimized for Instagram, Facebook, and
-              other platforms
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {socialMediaProjects.map((project) => (
-              <div
-                key={project.id}
-                onClick={() => openProjectModal(project)}
-                className="group relative aspect-square bg-slate-800 rounded-2xl overflow-hidden cursor-pointer hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 active:scale-95"
-              >
-                <img
-                  src={project.image}
-                  alt="no image"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <h4 className="font-bold text-sm mb-1">{project.title}</h4>
-                    <p className="text-xs text-gray-300">
-                      {project.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Website / Frontend Projects */}
+       {/* Website / Frontend Projects */}
         <div className="mb-24">
           <div className="mb-10">
             <h3 className="text-3xl font-bold mb-3">
@@ -406,7 +370,44 @@ export function ProjectShowcase() {
             ))}
           </div>
         </div>
+        
+{/* Social Media Ad Designs */}
+        <div className="mb-24">
+          <div className="mb-10">
+            <h3 className="text-3xl font-bold mb-3">Social Media Ad Designs</h3>
+            <p className="text-gray-400">
+              Eye-catching social content optimized for Instagram, Facebook, and
+              other platforms
+            </p>
+          </div>
 
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {socialMediaProjects.map((project) => (
+              <div
+                key={project.id}
+                onClick={() => openProjectModal(project)}
+                className="group relative aspect-square bg-slate-800 rounded-2xl overflow-hidden cursor-pointer hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 active:scale-95"
+              >
+                <img
+                  src={project.image}
+                  alt="no image"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <h4 className="font-bold text-sm mb-1">{project.title}</h4>
+                    <p className="text-xs text-gray-300">
+                      {project.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+       
         {/* Concert & Event Promotions */}
         <div>
           <div className="mb-10">
