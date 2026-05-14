@@ -11,20 +11,17 @@ export function About() {
                 Hi, I’m a <span className="font-bold">UI/UX</span> and{" "}
                 <span className="font-bold">Graphics Designer</span> with
                 frontend development skills, focused on creating clean,
-                user-friendly, and visually engaging digital experiences.
+                functional, visually engaging, and easy to use.
               </p>
               <p>
-                With a strong foundation in design principles and modern web
-                technologies, I specialize in transforming complex ideas into
-                intuitive interfaces. My approach combines aesthetic sensibility
-                with technical expertise to deliver solutions that are both
-                visually stunning and highly performant.
+                I enjoy turning ideas into designs that not only look good but also feel natural and intuitive for users. 
+                From wireframes and visual design to responsive frontend implementation, 
+                I focus on creating experiences that solve real problems and leave a lasting impression.
               </p>
               <p>
-                I believe great design is invisible—it just works. Whether I'm
-                wireframing a new feature, coding a responsive layout, or
-                refining micro-interactions, my focus is always on the end user
-                and creating seamless experiences that solve real problems.
+              I have a strong understanding of design principles and modern web technologies, which helps me create products that balance creativity, 
+              usability, and performance. Whether I’m designing interfaces, refining user experiences, or bringing layouts to life on the frontend, 
+              my focus is always on building seamless and meaningful digital experiences..
               </p>
             </div>
           </div>
