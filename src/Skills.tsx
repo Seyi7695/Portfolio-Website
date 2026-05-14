@@ -38,12 +38,7 @@ const skills: Skill[] = [
     color: "from-blue-500 to-cyan-500",
     bgGlow: "group-hover:shadow-blue-500/30"
   },
-  { 
-    name: "JavaScript", 
-    icon: <Zap className="w-6 h-6 text-blue-500" />, 
-    color: "from-orange-400 to-orange-600",
-    bgGlow: "group-hover:shadow-Orange-500/30",
-  }
+ 
 ];
 
 export function Skills() {
