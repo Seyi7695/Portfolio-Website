@@ -41,10 +41,10 @@ const skills: Skill[] = [
     bgGlow: "group-hover:shadow-blue-500/30"
   },
   { 
-    name: "TypeScript", 
-    icon: <SiTypescript className="w-6 h-6 text-blue-500" />, 
-    color: "from-sky-400 to-blue-600",
-    bgGlow: "group-hover:shadow-sky-500/30"
+    name: "JavaScript", 
+    icon: <Zap className="w-6 h-6 text-blue-500" />, 
+    color: "from-orange-400 to-orange-600",
+    bgGlow: "group-hover:shadow-sky-500/30",
   }
 ];
 
