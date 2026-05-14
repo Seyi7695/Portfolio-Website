@@ -6,6 +6,8 @@ import {
   Zap
 } from 'lucide-react';
 
+import { SiTypescript } from "react-icons/si";
+
 interface Skill {
   name: string;
   icon: React.ReactNode;
@@ -39,10 +41,10 @@ const skills: Skill[] = [
     bgGlow: "group-hover:shadow-blue-500/30"
   },
   { 
-    name: "JavaScript", 
-    icon: <Zap className="w-6 h-6" />, 
-    color: "from-yellow-500 to-orange-500",
-    bgGlow: "group-hover:shadow-yellow-500/30"
+    name: "TypeScript", 
+    icon: <SiTypescript className="w-6 h-6 text-blue-500" />, 
+    color: "from-sky-400 to-blue-600",
+    bgGlow: "group-hover:shadow-sky-500/30"
   }
 ];
 
