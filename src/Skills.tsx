@@ -44,7 +44,7 @@ const skills: Skill[] = [
     name: "JavaScript", 
     icon: <Zap className="w-6 h-6 text-blue-500" />, 
     color: "from-orange-400 to-orange-600",
-    bgGlow: "group-hover:shadow-sky-500/30",
+    bgGlow: "group-hover:shadow-Orange-500/30",
   }
 ];
 
