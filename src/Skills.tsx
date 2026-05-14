@@ -6,8 +6,6 @@ import {
   Zap
 } from 'lucide-react';
 
-import { SiTypescript } from "react-icons/si";
-
 interface Skill {
   name: string;
   icon: React.ReactNode;
